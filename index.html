@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <h1 id="title">Service Survey Form</h1>
+        <p id="description">
+          Use the following form to submit your opinion about our service.
+        </p>
+      </div>
+      <div class="form">
+        <form id="survey-form" action="">
+          <div class="input">
+            <label for="name" id="name-label">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+          </div>
+          <div class="input">
+            <label for="email" id="email-label">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+          </div>
+          <div class="input">
+            <label for="number" id="number-label">Employees</label>
+            <input type="number" name="number" id="number" placeholder="Enter # of employees" min=0 max=20/>
+          </div>
+          <div class="input">
+              <label for="dropdown">Sales Associate</label>
+            <select name="dropdown" id="dropdown">
+                <option value="one">Sally</option>
+                <option value="two">Harry</option>
+                <option value="three">Steve</option>
+            </select>
+          </div>
+          <div class="input">
+            <fieldset name="gender" id="gender">
+                <label for="gender">Your Gender</label>
+                <input type="radio" name="gender" id="gender-male" value="male">Male</input>
+                <input type="radio" name="gender" id="gender-female" value="female">Female</input>
+            </fieldset>
+          </div>
+            <div class="input">
+                <fieldset name="select">
+                    <label for="select">Which Service?</label>
+                    <input type="checkbox" name="select" id="" value="Sevice One">
+                    <input type="checkbox" name="select" id="" value="Sevice Two">
+                    <input type="checkbox" name="select" id="" value="Sevice Three">
+                </fieldset>
+              </div>
+              <div class="input">
+                <label for="comments" id="comments-label">More Comments</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+          <div class="button">
+            <button type="submit" id="submit">Submit The Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
